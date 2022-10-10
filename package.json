@@ -1,0 +1,25 @@
+{
+  "name": "over-sound-lightup",
+  "version": "1.0.0",
+  "description": "Control light with Spotify",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NNCT18J/over-sound-lightup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NNCT18J/over-sound-lightup/issues"
+  },
+  "homepage": "https://github.com/NNCT18J/over-sound-lightup#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "serialport": "^10.4.0",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}
