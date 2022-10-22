@@ -13,7 +13,7 @@ SerialPort.list().then(function(ports){
     })
   });
 
-const port = new SerialPort({ path: '/dev/ttyUSB0', baudRate: 9600 })
+const port = new SerialPort({ path: process.env.DEVICE, baudRate: 9600 })
 
 let track = "";
 let trackAnalytics = null;
