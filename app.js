@@ -47,9 +47,14 @@ const dbJob = () => {
         }
         return;
     }
+    if(dbData.ended){
+        initDb();
+        return;
+    }
     if (!sessionStarted) {
         serialWrite('D:0;R:50;G:50;B:50;FS:;F:;\n');
     }
+    console.log(dbData);
     sessionStarted = true;
     const pressed = Object.keys(dbData).filter(v => v.indexOf("pressed") !== -1).map(v => dbData[v]).some(v => v);
 
